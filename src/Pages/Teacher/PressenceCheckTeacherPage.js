@@ -17,7 +17,7 @@ const Content = () => {
 
   const getData = async () => {
     try {
-      const response = await AxiosAdmin.get("https://sregep.masuk.id/api/teacher/rekap-absensi");
+      const response = await AxiosAdmin.get("http://103.123.63.223:8001/api/teacher/rekap-absensi");
       console.log(response)
       if (response?.status === 200) {
         // setData(response);

@@ -26,7 +26,7 @@ function LoginTeacherPage() {
         password: password,
       });
 
-      const response = await Axios.post("http://sregep.masuk.id/api/auth/login/teacher", data);
+      const response = await Axios.post("http://103.123.63.223:8001/api/auth/login/teacher", data);
 
       if (response?.status === 200) {
         setLoading(false);

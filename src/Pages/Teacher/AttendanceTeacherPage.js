@@ -10,7 +10,7 @@ const Content = () => {
 
   const getData = async () => {
     try {
-      const response = await AxiosAdmin.get("https://sregep.masuk.id/api/teacher/jadwal");
+      const response = await AxiosAdmin.get("http://103.123.63.223:8001/api/teacher/jadwal");
 
       if (response?.status === 200) {
         // setData(response);

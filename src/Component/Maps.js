@@ -29,8 +29,8 @@ const ViewMaps = (props) => {
       scrollWheelZoom={false}
     >
       <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <Marker icon={customIcon} position={[51.505, -0.09]}>
         <Popup>Lokasi siswa disini</Popup>
@@ -82,8 +82,8 @@ const SelectMaps = ({ getLocation }) => {
       scrollWheelZoom={false}
     >
       <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <Marker
         draggable={true}

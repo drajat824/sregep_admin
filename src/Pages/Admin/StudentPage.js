@@ -18,7 +18,7 @@ const Content = () => {
 
   const getDataGroups = async () => {
     try {
-      const response = await AxiosAdmin.get("https://sregep.masuk.id/api/admin/get/group");
+      const response = await AxiosAdmin.get("http://103.123.63.223:8001/api/admin/get/group");
 
       if (response?.status === 200) {
         // setData(response);
@@ -38,7 +38,7 @@ const Content = () => {
     for (const item of groups) {
       console.log(item?.groupId, 'groupId')
       try {
-        const response = await AxiosAdmin.get(`https://sregep.masuk.id/api/admin/get/student/${item?.groupId}`);
+        const response = await AxiosAdmin.get(`http://103.123.63.223:8001/api/admin/get/student/${item?.groupId}`);
         const data = response?.data?.data;
         
         if (response?.status === 200) {
@@ -74,7 +74,7 @@ const Content = () => {
       });
 
       const response = await AxiosAdmin.post(
-        "https://sregep.masuk.id/api/admin/create/student",
+        "http://103.123.63.223:8001/api/admin/create/student",
         data
       );
 

@@ -27,7 +27,7 @@ function RegisterPage() {
         password: password,
       });
 
-      const response = await Axios.post("https://sregep.masuk.id/api/auth/register", data);
+      const response = await Axios.post("http://103.123.63.223:8001/api/auth/register", data);
 
       if (response?.status === 200) {
         setLoading(false);

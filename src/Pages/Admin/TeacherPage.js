@@ -17,7 +17,7 @@ const Content = () => {
 
   const getData = async () => {
     try {
-      const response = await AxiosAdmin.get("https://sregep.masuk.id/api/admin/get/teacher");
+      const response = await AxiosAdmin.get("http://103.123.63.223:8001/api/admin/get/teacher");
 
       if (response?.status === 200) {
         // setData(response);
@@ -49,7 +49,7 @@ const Content = () => {
       });
 
       const response = await AxiosAdmin.post(
-        "https://sregep.masuk.id/api/admin/create/teacher",
+        "http://103.123.63.223:8001/api/admin/create/teacher",
         data
       );
 

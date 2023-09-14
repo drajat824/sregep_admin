@@ -27,7 +27,7 @@ const Content = () => {
 
   // const getDataJadwal = async () => {
   //   try {
-  //     const response = await AxiosAdmin.get("https://sregep.masuk.id/api/teacher/jadwal");
+  //     const response = await AxiosAdmin.get("http://103.123.63.223:8001/api/teacher/jadwal");
 
   //     if (response?.status === 200) {
   //       // setData(response);
@@ -56,7 +56,7 @@ const Content = () => {
 
   const getDataAttendances = async () => {
     try {
-      const response = await AxiosAdmin.get("https://sregep.masuk.id/api/teacher/jadwal");
+      const response = await AxiosAdmin.get("http://103.123.63.223:8001/api/teacher/jadwal");
 
       if (response?.status === 200) {
         // setData(response);
@@ -69,7 +69,7 @@ const Content = () => {
 
   const getData = async () => {
     try {
-      const response = await AxiosAdmin.get("https://sregep.masuk.id/api/teacher/absensi");
+      const response = await AxiosAdmin.get("http://103.123.63.223:8001/api/teacher/absensi");
 
       if (response?.status === 200) {
         setData(response?.data?.data);
@@ -114,7 +114,7 @@ const Content = () => {
         lokasi: lokasi,
       });
 
-      const response = await AxiosAdmin.post("https://sregep.masuk.id/api/teacher/absensi", data);
+      const response = await AxiosAdmin.post("http://103.123.63.223:8001/api/teacher/absensi", data);
 
       if (response?.status === 200) {
         setShowModalAdd(false);
